@@ -1,0 +1,13 @@
+.file-input {
+  display: none;
+  width: 100%;
+}
+
+.file-upload {
+  width: 100%;
+  text-align: right;
+}
+
+.upload-btn {
+  margin: 8px;
+}

@@ -1,0 +1,7 @@
+/node_modules
+/problems
+/testdata/*large*
+/testdata/*.iso
+user-mgmt-frontend/node_modules
+/AngularPlayground
+setup/user_data.csv
