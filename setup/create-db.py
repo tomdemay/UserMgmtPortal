@@ -13,15 +13,15 @@ rds_backend_password    = os.environ['PORTFOLIO_RDS_BACKEND_PASSWORD']
 # Recreate the user_mgmt_portal_db and user
 sql = f'''
 -- Drop the database if it exists
-DROP DATABASE IF EXISTS user_mgmt_portal_db;
+-- DROP DATABASE IF EXISTS user_mgmt_portal_db;
 DROP USER IF EXISTS '{rds_backend_username}'@'%';
 
 -- Create the database
-CREATE DATABASE user_mgmt_portal_db;
+-- CREATE DATABASE user_mgmt_portal_db;
 
 -- Create user
-CREATE USER '{rds_backend_username}'@'%' IDENTIFIED BY '${rds_backend_password}';
-GRANT SELECT, INSERT, UPDATE, DELETE ON *.* TO '{rds_backend_username}'@'%' WITH GRANT OPTION;
+CREATE USER '{rds_backend_username}'@'%' IDENTIFIED BY '{rds_backend_password}';
+GRANT SELECT, INSERT, UPDATE, DELETE ON *.* TO '{rds_backend_username}'@'%';
 FLUSH PRIVILEGES;
 '''
 

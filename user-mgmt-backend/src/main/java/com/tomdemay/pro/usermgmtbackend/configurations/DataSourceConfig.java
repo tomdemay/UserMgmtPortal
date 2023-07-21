@@ -23,7 +23,7 @@ public class DataSourceConfig {
     private String rds_password;
 
     private String getConnectionString() {
-        return String.format("jdbc:%s/%s", rds_protocol, rds_endpoint);
+        return String.format("jdbc:%s://%s:3306/user_mgmt_portal_db", rds_protocol, rds_endpoint);
     }
 
     @Bean
