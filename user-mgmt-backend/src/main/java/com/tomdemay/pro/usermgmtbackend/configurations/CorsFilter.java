@@ -1,4 +1,4 @@
-package com.exostar.usermgmtbackend.configurations;
+package com.tomdemay.pro.usermgmtbackend.configurations;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;

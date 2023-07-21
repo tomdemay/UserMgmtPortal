@@ -1,4 +1,4 @@
-package com.exostar.usermgmtbackend.exceptions;
+package com.tomdemay.pro.usermgmtbackend.exceptions;
 
 import jakarta.validation.ConstraintViolationException;
 import lombok.extern.slf4j.Slf4j;

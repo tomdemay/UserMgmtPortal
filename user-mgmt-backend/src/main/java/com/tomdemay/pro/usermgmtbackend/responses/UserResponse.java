@@ -1,4 +1,4 @@
-package com.exostar.usermgmtbackend.responses;
+package com.tomdemay.pro.usermgmtbackend.responses;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;

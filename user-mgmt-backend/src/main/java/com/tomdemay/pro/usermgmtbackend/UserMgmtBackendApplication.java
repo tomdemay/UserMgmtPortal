@@ -1,4 +1,4 @@
-package com.exostar.usermgmtbackend;
+package com.tomdemay.pro.usermgmtbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
