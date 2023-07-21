@@ -10,21 +10,28 @@ import javax.sql.DataSource;
 @Configuration
 public class DataSourceConfig {
 
-    @Value("${CLEARDB_DATABASE_URL}")
-    private String databaseUrl;
+    @Value("${PORTFOLIO_RDS_ENDPOINT}")
+    private String rds_endpoint;
 
-    @Value("${CLEARDB_DATABASE_USERNAME}")
-    private String username;
+    @Value("${PORTFOLIO_RDS_PROTOCOL}")
+    private String rds_protocol;
 
-    @Value("${CLEARDB_DATABASE_PASSWORD}")
-    private String password;
+    @Value("${PORTFOLIO_RDS_BACKEND_USERNAME}")
+    private String rds_username;
+
+    @Value("${PORTFOLIO_RDS_BACKEND_PASSWORD}")
+    private String rds_password;
+
+    private String getConnectionString() {
+        return String.format("jdbc:%s/%s", rds_protocol, rds_endpoint);
+    }
 
     @Bean
     public DataSource dataSource() {
         return DataSourceBuilder.create()
-                .url("jdbc:"+databaseUrl)
-                .username(username)
-                .password(password)
+                .url(getConnectionString())
+                .username(rds_username)
+                .password(rds_password)
                 .build();
     }
 }

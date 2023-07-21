@@ -41,7 +41,7 @@
             "type": "java",
             "name": "UserMgmtBackendApplication",
             "request": "launch",
-            "mainClass": "com.exostar.usermgmtbackend.UserMgmtBackendApplication",
+            "mainClass": "com.tomdemay.pro.usermgmtbackend.UserMgmtBackendApplication",
             "projectName": "user-mgmt-backend"
         }
     ]
