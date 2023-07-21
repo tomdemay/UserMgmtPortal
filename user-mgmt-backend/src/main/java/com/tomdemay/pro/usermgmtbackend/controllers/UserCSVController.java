@@ -1,4 +1,4 @@
-package com.exostar.usermgmtbackend.controllers;
+package com.tomdemay.pro.usermgmtbackend.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
@@ -16,6 +16,9 @@ import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.bean.HeaderColumnNameMappingStrategy;
 import com.opencsv.bean.MappingStrategy;
+import com.tomdemay.pro.usermgmtbackend.models.User;
+import com.tomdemay.pro.usermgmtbackend.repositories.UserRepository;
+import com.tomdemay.pro.usermgmtbackend.responses.UserResponse;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -24,10 +27,6 @@ import java.io.Reader;
 import java.util.Collections;
 import java.util.List;
 import java.io.IOException;
-
-import com.exostar.usermgmtbackend.repositories.UserRepository;
-import com.exostar.usermgmtbackend.responses.UserResponse;
-import com.exostar.usermgmtbackend.models.User;
 
 @RestController
 @RequestMapping("/api/users")

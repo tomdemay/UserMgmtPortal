@@ -1,4 +1,4 @@
-package com.exostar.usermgmtbackend.models;
+package com.tomdemay.pro.usermgmtbackend.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

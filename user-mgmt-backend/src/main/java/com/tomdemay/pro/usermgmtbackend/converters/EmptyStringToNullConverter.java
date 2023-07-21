@@ -1,4 +1,4 @@
-package com.exostar.usermgmtbackend.converters;
+package com.tomdemay.pro.usermgmtbackend.converters;
 
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;

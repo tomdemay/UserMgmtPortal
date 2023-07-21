@@ -1,4 +1,4 @@
-package com.exostar.usermgmtbackend.exceptions;
+package com.tomdemay.pro.usermgmtbackend.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
