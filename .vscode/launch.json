@@ -61,6 +61,18 @@
             "preLaunchTask": "npm: test",
             "url": "http://localhost:9876/debug.html",
             "cwd": "${workspaceFolder}/user-mgmt-frontend",
+        },
+        {
+            "type": "java",
+            "name": "Tomcat Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "projectName": "user-mgmt-backend",
+            "port": 8000,
+            "sourcePaths": [
+                "${workspaceFolder}/src/main/java",
+                "C:/Program Files/Java/jdk-17/lib/srcfiles"
+            ]
         }
     ]
 }

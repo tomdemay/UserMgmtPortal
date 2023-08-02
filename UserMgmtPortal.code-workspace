@@ -6,6 +6,12 @@
     ],
     "settings": {
         "java.compile.nullAnalysis.mode": "automatic",
-        "java.configuration.updateBuildConfiguration": "automatic"
+        "java.configuration.updateBuildConfiguration": "automatic",
+        "java.configuration.runtimes": [
+            {
+                "name": "JavaSE-17",
+                "path": "d:\\GraalVM\\graalvm-ce-java17-22.3.3"
+            }
+        ]
     }
 }

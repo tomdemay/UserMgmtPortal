@@ -2,12 +2,13 @@ package com.tomdemay.pro.usermgmtbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
 @Slf4j
-public class UserMgmtBackendApplication {
+public class UserMgmtBackendApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         try {
@@ -18,5 +19,5 @@ public class UserMgmtBackendApplication {
         } finally {
             log.trace("Exiting main function...");
         }
-	}
+    }
 }

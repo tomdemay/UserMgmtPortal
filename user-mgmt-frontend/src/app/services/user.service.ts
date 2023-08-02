@@ -137,8 +137,8 @@ export class UserService implements OnInit {
     private handleProgressEvent(event: any, action: string): StatusInfo {
         let progress: number = Math.round(100 * event.loaded / event.total);
         return progress < 100
-            ? { progress: progress, status: HttpStatusCode.Accepted, messages: [`${action} progress: ${progress}%`], timeStamp: new Date() }
-            : { progress: progress, status: HttpStatusCode.Processing, messages: [`${action} waiting for results`], timeStamp: new Date() };
+            ? { progress: progress, status: HttpStatusCode.Accepted, messages: [`${action} in progress: Progress: ${progress}%...`], timeStamp: new Date() }
+            : { progress: progress, status: HttpStatusCode.Processing, messages: [`${action} complete: Waiting for results...`], timeStamp: new Date() };
     }
     /**
      * @description Handle get users events and return a Users object.

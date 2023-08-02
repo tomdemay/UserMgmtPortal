@@ -34,8 +34,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -58,6 +58,20 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
+            },
+            "eb-tomcat10": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.eb-tomcat10.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -70,6 +84,9 @@
             },
             "development": {
               "browserTarget": "user-mgmt-frontend:build:development"
+            },
+            "eb-tomcat10": {
+              "browserTarget": "user-mgmt-frontend:build:eb-tomcat10"
             }
           },
           "defaultConfiguration": "development"

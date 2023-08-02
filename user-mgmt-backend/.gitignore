@@ -31,3 +31,8 @@ build/
 *.log
 *.gz
 *.zip
+.env
+*.jar
+*.class
+*.war
+**/attempts/

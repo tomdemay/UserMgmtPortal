@@ -1,4 +1,6 @@
 export const environment = {
-  entryPoint: "http://localhost:8080/api/users",
+  production: true,
+  development: false,
+  entryPoint: "https://xkidd5gy86.execute-api.us-east-1.amazonaws.com/api/users",
   defaultPageSize: 5,
 };

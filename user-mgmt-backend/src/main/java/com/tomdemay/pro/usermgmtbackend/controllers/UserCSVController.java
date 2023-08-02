@@ -7,7 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -56,9 +55,7 @@ public class UserCSVController {
     }
     
     @PostMapping("/upload-csv")
-    public ResponseEntity<UserResponse> processCSV(
-            @RequestHeader(value = "Origin") String origin, 
-            @RequestParam("file") MultipartFile file) throws IOException {
+    public ResponseEntity<UserResponse> processCSV(@RequestParam("file") MultipartFile file) throws IOException {
         try {
             log.trace("Entering processCSV...");
             log.info("Processing CSV file...");
